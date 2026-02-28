@@ -36,27 +36,23 @@
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center
-            <div class="card">
-    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4432f3?auto=format&fit=crop&w=300&q=80">
-    <div class="card-content">
-        <h3>Third Article</h3>
-        <p>Click to read more...</p>
-        <a href="article3.html" style="color:red;">Read More</a>
-    </div>
-</div>;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centrira kartice horizontalno */
+    max-width: 1200px;       /* maksimalna širina container-a */
+    margin: 0 auto;           /* centriranje container-a na ekranu */
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-        .card {
-            background: #222;
-            width: 300px;
-            margin: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
+.card {
+    background: #222;
+    width: 300px;             /* širina kartice */
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
 
         .card:hover {
             transform: scale(1.05);
